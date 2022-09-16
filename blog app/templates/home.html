@@ -1,0 +1,14 @@
+<!-- templates/home.html -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+  {% for post in object_list %}
+  <div class="">
+    <h2 class="myp"><a class="text-success"href="{% url 'post_detail' post.pk %}">{{ post.title }}</a></h2>
+      <p class="myp">{{ post.body }}</p>
+  </div>
+  {% endfor%}
+
+{% endblock content %}

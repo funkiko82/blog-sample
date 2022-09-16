@@ -1,0 +1,13 @@
+<!-- templates/post_new.html -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+<div>
+  <h1 class="text-warning">New Post</h1>
+  <form action="" method='post'>{% csrf_token %}
+    {{ form.as_p }}
+    <button class="btn btn-lg btn-warning" type="submit" values='Save'>Post</button> 
+  </form>
+</div>
+{% endblock content %}

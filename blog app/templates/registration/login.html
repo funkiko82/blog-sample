@@ -1,0 +1,15 @@
+<!-- templates/login.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- problem: Incorrect padding exception. -->
+<!-- answer: Just delete cookie-files in your browser.-->
+<!-- It worked! -->
+<h2>Log In</h2>
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+<button class="btn btn-lg btn-warning"type="submit">Login</button>
+</form>
+
+{% endblock content %}

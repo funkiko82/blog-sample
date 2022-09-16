@@ -1,0 +1,76 @@
+@charset "utf-8";
+@font-face { 
+    font-family: Monoton; 
+    src: url('../fonts/Monoton-Regular.ttf') format('truetype');
+    }
+@font-face{
+    font-family: Comfortaa; 
+    src: url('../fonts/Comfortaa-Bold.ttf') format('truetype');
+        }
+@font-face{
+    font-family: Honeybee; 
+    src: url('../fonts/Honeybee.ttf') format('truetype');
+        }
+@font-face{
+    font-family: Flavors; 
+    src: url('../fonts/Flavors-Regular.ttf') format('truetype');
+        }
+@font-face{
+    font-family: HappyMonkey; 
+    src: url('../fonts/HappyMonkey-Regular.ttf') format('truetype');
+        }
+@font-face{
+    font-family: Cupcake; 
+    src: url('../fonts/Cupcake.ttf') format('truetype');
+        }
+@font-face{
+    font-family: BlueberryHills; 
+    src: url('../fonts/BlueberryHills.ttf') format('truetype');
+        }
+@font-face{
+    font-family: monofett; 
+    src: url('../fonts/monofett.ttf') format('truetype');
+        }
+@font-face { 
+    font-family: Sprinkles; 
+    src: url('../fonts/Sprinkles.ttf') format('truetype');
+    }
+.myfont{
+	font-family:Monoton;
+	}
+.mybody{
+	width: fit-content;
+	background-size:cover;
+	background-image: url('../img/cool-blue.png');
+	background-repeat:no-repeat;
+	}
+.bg-img{
+	background-image: url('../img/minimalism_spring.jpg');
+	background-size:cover;
+	background-repeat:no-repeat;
+	width:750px;*/-->
+	height:250px;
+	}
+.myp{
+	color: #fffffff;
+	font-family:Comfortaa;
+}
+.myp1{
+	color:#fff;
+	font-family:Honeybee;
+.hr{
+    color: #fffffff;
+}
+	}
+.blueberry{
+	color:#fd7e14;;
+	font-family:BlueberryHills;
+	font-weight:bolder;
+	}
+.dawningofanewday{
+	color:#fd7e14;
+	font-family:DawningofaNewDay;
+	font-weight:bolder;
+
+	}
+	
