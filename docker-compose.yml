@@ -1,0 +1,36 @@
+
+version: '3.7'
+
+services:
+
+  web:
+
+    build: .
+
+    command: python3.10 /PythonProjects/manage.py runserver 0.0.0.0:8000
+
+    volumes:
+
+      - .:/PythonProjects
+
+    ports:
+
+      - 8000:8000
+
+    depends_on:
+
+      - db
+# Always getting error building and version incompatibility the reason is because
+# of indentation.Check always your indentation.
+  db:
+    image: postgres:14
+    environment:
+        POSTGRES_PASSWORD: postgres
+    expose:
+      - 5432
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+
+volumes:
+  postgres_data:
+    
