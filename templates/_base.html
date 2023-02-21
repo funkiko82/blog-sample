@@ -1,0 +1,15 @@
+<!-- templates/_base.html-->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>{% block title %}Bookstore{% endblock title %}</title>
+        <link rel="stylesheet" href="{% static 'css/litera-bootstrap.css' %}">
+    </head>
+    <body class="body">
+        {% block content %}
+
+        {% endblock content %}
+    </body>
+</html>
